@@ -68,7 +68,7 @@
 <body>
 <!-- Header Section -->
 <div style="text-align:center; font-family: Akshar, sans-serif; font-size:4vw; margin-top:30px">
-    85 -भोकर विधानसभा सार्वजनिक निवडणूक २०२४ <br>
+    ९१ - मुखेड - कंधार विधानसभा सार्वजनिक निवडणूक २०२४ <br>
     डमी मतदान यंत्र
 </div>
 
@@ -105,13 +105,13 @@
         const votingTable = $('.voting-table');
 
         for(let i = 1; i <= totalRows; i++) {
-            const isHighlightRow = i === 1;
+            const isHighlightRow = i === 3;
             const row = $('<tr>').addClass(isHighlightRow ? 'highlight-row' : '');
 
             // Add row content
             row.append(`
                     <td>${i}</td>
-                    <td class="${isHighlightRow ? 'highlight-text' : ''}">${isHighlightRow ? 'कदम कोंढेकर तिरुपती उर्फ पप्पु बाबुराव' : ''}</td>
+                    <td class="${isHighlightRow ? 'highlight-text' : ''}">${isHighlightRow ? 'बेटमोगरेकर हणमंतराव व्यंकटराव पाटील' : ''}</td>
                     <td>${isHighlightRow ? '<img src="logo.png" class="symbol-image">' : ''}</td>
                     <td><img id="errorimage${i}" src="bulb.png" class="bulb-image"></td>
                     <td><div id="errorbtn${i}" class="${isHighlightRow ? 'buttonCorrect' : 'button'} button-base" style="width:100% !important">${isHighlightRow ? 'बटण दाबा' : ''}</div></td>
